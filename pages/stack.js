@@ -24,6 +24,7 @@ import {
   BootstrapIcon,
   NextIcon,
   MaterialIcon,
+  ChakraIcon,
   NodeIcon,
   ReduxIcon,
   SassIcon,
@@ -80,6 +81,9 @@ const Stack = () => {
             </ListItem>
             <ListItem>
               <ListIcon w={5} h={5} as={MaterialIcon} />Material UI
+            </ListItem>
+            <ListItem>
+              <ListIcon w={5} h={5} as={ChakraIcon} />Chakra UI
             </ListItem>
             <ListItem>
               <ListIcon w={5} h={5} as={SassIcon} />Sass

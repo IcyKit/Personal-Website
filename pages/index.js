@@ -77,7 +77,7 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             About
           </Heading>
-          <Paragraph>I&apos;m 19 years old Fullstack Developer. I was born in St. Petersburg, Russia. While studying at school, I started doing design first, and then programming and creating websites. All my life, my dream has been to be a Developer. I tried myself in different IT fields to get a full understanding of the team interaction. Coming to the crypto gave me a boost in my desire to become a Fullstack Developer.</Paragraph>
+          <Paragraph>I&apos;m a 19 year old Fullstack Developer from St. Petersburg, Russia. I asked two of my friends to describe me in one word. They said I am responsive person and the soul of the company 😃. Previously, I was an Affiliate manager and UI/UX designer. Such different areas of IT gave me a complete understanding of the creation of the product and a view from each side of the development.</Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/stack">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal" my={2}>
@@ -124,7 +124,7 @@ const Page = () => {
             <Link href="https://www.behance.net/icykit" target="_blank">
               Design
             </Link>
-            , Traveling, Games, Music
+            , Traveling, Games, Fitness, Music.
           </Paragraph>
         </Section>
 
