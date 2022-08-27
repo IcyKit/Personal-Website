@@ -18,8 +18,6 @@ import Layout from '../components/layouts/article';
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import { BioSection, BioYear } from '../components/bio';
-import Footer from '../components/footer';
-import { GridItem } from '../components/grid-item';
 import SocialLink from '../components/social-link';
 import {
   IoLogoTwitter,
@@ -51,7 +49,7 @@ const Page = () => {
         <Box display={{ md: "flex" }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
-              Efimov Nikita
+              Efimov Nikita 👋🏻
             </Heading>
             <p>Digital Creator (Developer / Gamer / Designer)</p>
           </Box>
@@ -77,7 +75,7 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             About
           </Heading>
-          <Paragraph>I&apos;m a 19 year old Fullstack Developer from St. Petersburg, Russia. I asked two of my friends to describe me in one word. They said I am responsive person and the soul of the company 😃. Previously, I was an Affiliate manager and UI/UX designer. Such different areas of IT gave me a complete understanding of the creation of the product and a view from each side of the development.</Paragraph>
+          <Paragraph>I&apos;m a 19 year old Fullstack Developer from St. Petersburg, Russia. I asked two of my friends to describe me in one word. They said I am responsive person and the soul of the company. 😃 Previously, I was an Affiliate manager and UI/UX designer. Such different areas of IT gave me a complete understanding of the creation of the product and a view from each side of the development.</Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/stack">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal" my={2}>
