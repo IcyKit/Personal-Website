@@ -1,50 +1,65 @@
 import {
   Container,
-  Icon,
-  createIcon,
-  Box,
-  Image,
   Heading,
   SimpleGrid,
   Divider,
-  useColorModeValue,
   List,
   ListItem,
   ListIcon,
-  UnorderedList,
 } from '@chakra-ui/react';
 import Section from '../components/section';
 import Layout from '../components/layouts/article';
-import { WorkGridItem } from '../components/grid-item';
-import {
-  ReactIcon,
-  HtmlIcon,
-  CssIcon,
-  JavaScriptIcon,
-  BootstrapIcon,
-  NextIcon,
-  MaterialIcon,
-  ChakraIcon,
-  NodeIcon,
-  ReduxIcon,
-  SassIcon,
-  MarkdownIcon,
-  TailwindIcon,
-  SolidityIcon,
-  TypeScriptIcon,
-  MongodbIcon,
-  ExpressIcon,
-  GitIcon,
-  GitHubIcon,
-  VsCodeIcon,
-  VimIcon,
-  FigmaIcon,
-  PhotoshopIcon,
-  BlenderIcon,
-} from '../components/icons';
-import { SiElectron, SiWebpack, SiBabel, SiEslint, SiNpm, SiPostgresql, SiSocketdotio, SiPostman } from 'react-icons/si';
+import { SiElectron, SiWebpack, SiBabel, SiEslint, SiNpm, SiPostgresql, SiSocketdotio, SiPostman, SiGraphql, SiReduxsaga, SiHtml5, SiCss3, SiJavascript, SiReact, SiRedux, SiNextdotjs, SiNodedotjs, SiBootstrap, SiMaterialui, SiChakraui, SiSass, SiTailwindcss, SiMarkdown, SiTypescript, SiSolidity, SiMongodb, SiExpress, SiGit, SiGithub, SiVisualstudiocode, SiVim, SiFigma, SiAdobephotoshop, SiBlender, } from 'react-icons/si';
 
 const Stack = () => {
+
+  const techStack = [
+    {title: 'HTML', icon: SiHtml5},
+    {title: 'CSS', icon: SiCss3},
+    {title: 'JavaScript', icon: SiJavascript},
+    {title: 'React', icon: SiReact},
+    {title: 'Redux', icon: SiRedux},
+    {title: 'Next.JS', icon: SiNextdotjs},
+    {title: 'Node.JS', icon: SiNodedotjs},
+    {title: 'Electron', icon: SiElectron},
+    {title: 'NPM and Yarn', icon: SiNpm},
+    {title: 'React Native', icon: SiReact},
+    {title: 'Webpack', icon: SiWebpack},
+    {title: 'Babel', icon: SiBabel},
+    {title: 'ESLint', icon: SiEslint},
+    {title: 'Bootstrap', icon: SiBootstrap},
+    {title: 'Material UI', icon: SiMaterialui},
+    {title: 'Chakra UI', icon: SiChakraui},
+    {title: 'Sass', icon: SiSass},
+    {title: 'Tailwind', icon: SiTailwindcss},
+    {title: 'Markdown', icon: SiMarkdown}
+  ];
+
+  const learningNow = [
+    {title: 'TypeScript', icon: SiTypescript},
+    {title: 'Solidity', icon: SiSolidity},
+    {title: 'PostgreSQL', icon: SiPostgresql}
+  ];
+
+  const inPlans = [
+    {title: 'Express', icon: SiExpress},
+    {title: 'MongoDB', icon: SiMongodb},
+    {title: 'Socket.io', icon: SiSocketdotio},
+    {title: 'Postman', icon: SiPostman},
+    {title: 'GraphQL', icon: SiGraphql},
+    {title: 'ReduxSaga', icon: SiReduxsaga},
+  ];
+
+  const tools = [
+    {title: 'Git', icon: SiGit},
+    {title: 'GitHub', icon: SiGithub},
+    {title: 'VS Code', icon: SiVisualstudiocode},
+    {title: 'Vim', icon: SiVim},
+    {title: 'Figma', icon: SiFigma},
+    {title: 'Photoshop', icon: SiAdobephotoshop},
+    {title: 'Blender', icon: SiBlender},
+  ];
+
   return (
     <Layout title="Stack">
       <Container mt={4}>
@@ -56,63 +71,13 @@ const Stack = () => {
         <Section delay={0.2}>
           <List spacing={4} fontSize={16}>
             <SimpleGrid spacing={5} columns={[1, 2, 3]}>
-              <ListItem>
-                <ListIcon w={5} h={5} as={HtmlIcon} />HTML
-              </ListItem>
-              <ListItem>
-                <ListIcon w={5} h={5} as={CssIcon} />CSS
-              </ListItem>
-              <ListItem>
-                <ListIcon w={5} h={5} as={JavaScriptIcon} />JavaScript
-              </ListItem>
-              <ListItem>
-                <ListIcon w={5} h={5} as={ReactIcon} />React
-              </ListItem>
-              <ListItem>
-                <ListIcon w={5} h={5} as={ReduxIcon} />Redux
-              </ListItem>
-              <ListItem>
-                <ListIcon w={5} h={5} as={NextIcon} />NextJS
-              </ListItem>
-              <ListItem>
-                <ListIcon w={5} h={5} as={NodeIcon} />Node.JS
-              </ListItem>
-              <ListItem>
-                <ListIcon w={5} h={5} as={SiElectron} />Electron
-              </ListItem>
-              <ListItem>
-                <ListIcon w={5} h={5} as={SiNpm} />NPM and Yarn
-              </ListItem>
-              <ListItem>
-                <ListIcon w={5} h={5} as={ReactIcon} />React Native
-              </ListItem>
-              <ListItem>
-                <ListIcon w={5} h={5} as={SiWebpack} />Webpack
-              </ListItem>
-              <ListItem>
-                <ListIcon w={5} h={5} as={SiBabel} />Babel
-              </ListItem>
-              <ListItem>
-                <ListIcon w={5} h={5} as={SiEslint} />ESLint
-              </ListItem>
-              <ListItem>
-                <ListIcon w={5} h={5} as={BootstrapIcon} />Bootstrap
-              </ListItem>
-              <ListItem>
-                <ListIcon w={5} h={5} as={MaterialIcon} />Material UI
-              </ListItem>
-              <ListItem>
-                <ListIcon w={5} h={5} as={ChakraIcon} />Chakra UI
-              </ListItem>
-              <ListItem>
-                <ListIcon w={5} h={5} as={SassIcon} />Sass
-              </ListItem>
-              <ListItem>
-                <ListIcon w={5} h={5} as={TailwindIcon} />Tailwind
-              </ListItem>
-              <ListItem>
-                <ListIcon w={5} h={5} as={MarkdownIcon} />Markdown
-              </ListItem>
+              {techStack.map(item => {
+                return (
+                  <ListItem>
+                    <ListIcon w={5} h={5} as={item.icon} />{item.title}
+                  </ListItem>
+                )
+              })}
             </SimpleGrid>
           </List>
         </Section>
@@ -124,15 +89,13 @@ const Stack = () => {
         </Section>
         <Section delay={0.4}>
           <List spacing={4} fontSize={16}>
-            <ListItem>
-              <ListIcon w={5} h={5} as={TypeScriptIcon} />TypeScript
-            </ListItem>
-            <ListItem>
-              <ListIcon w={5} h={5} as={SolidityIcon} />Solidity
-            </ListItem>
-            <ListItem>
-              <ListIcon w={5} h={5} as={SiPostgresql} />PostgreSQL
-            </ListItem>
+          {learningNow.map(item => {
+                return (
+                  <ListItem>
+                    <ListIcon w={5} h={5} as={item.icon} />{item.title}
+                  </ListItem>
+                )
+              })}
           </List>
         </Section>
         <Section delay={0.6}>
@@ -143,18 +106,13 @@ const Stack = () => {
         </Section>
         <Section delay={0.6}>
           <List spacing={4} fontSize={16}>
-            <ListItem>
-              <ListIcon w={5} h={5} as={ExpressIcon} />Express
-            </ListItem>
-            <ListItem>
-              <ListIcon w={5} h={5} as={MongodbIcon} />MongoDB
-            </ListItem>
-            <ListItem>
-              <ListIcon w={5} h={5} as={SiSocketdotio} />Socket.io
-            </ListItem>
-            <ListItem>
-              <ListIcon w={5} h={5} as={SiPostman} />Postman
-            </ListItem>
+          {inPlans.map(item => {
+                return (
+                  <ListItem>
+                    <ListIcon w={5} h={5} as={item.icon} />{item.title}
+                  </ListItem>
+                )
+              })}
           </List>
         </Section>
         <Section delay={0.8}>
@@ -165,27 +123,13 @@ const Stack = () => {
         </Section>
         <Section delay={0.8}>
           <List spacing={4} fontSize={16}>
-            <ListItem>
-              <ListIcon w={5} h={5} as={GitIcon} />Git
-            </ListItem>
-            <ListItem>
-              <ListIcon w={5} h={5} as={GitHubIcon} />GitHub
-            </ListItem>
-            <ListItem>
-              <ListIcon w={5} h={5} as={VsCodeIcon} />VS Code
-            </ListItem>
-            <ListItem>
-              <ListIcon w={5} h={5} as={VimIcon} />Vim
-            </ListItem>
-            <ListItem>
-              <ListIcon w={5} h={5} as={FigmaIcon} />Figma
-            </ListItem>
-            <ListItem>
-              <ListIcon w={5} h={5} as={PhotoshopIcon} />Photoshop
-            </ListItem>
-            <ListItem>
-              <ListIcon w={5} h={5} as={BlenderIcon} />Blender
-            </ListItem>
+          {tools.map(item => {
+                return (
+                  <ListItem>
+                    <ListIcon w={5} h={5} as={item.icon} />{item.title}
+                  </ListItem>
+                )
+              })}
           </List>
         </Section>
       </Container>
