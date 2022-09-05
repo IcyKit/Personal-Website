@@ -117,6 +117,17 @@ const Page = () => {
             <BioYear>2023</BioYear>
             Completed a one-year course on Fullstack development
           </BioSection>
+          <Box align="center" my={4}>
+            <NextLink href="/workspace">
+              <Button
+                rightIcon={<ChevronRightIcon />}
+                colorScheme="teal"
+                my={2}
+              >
+                My Workspace
+              </Button>
+            </NextLink>
+          </Box>
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">

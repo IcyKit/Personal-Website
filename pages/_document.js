@@ -17,7 +17,6 @@ export default class Document extends NextDocument {
             type="image/png"
             sizes="32x32"
             href="/favicon-32x32.png"
-            fill="ffffff"
           />
           <link
             rel="icon"
@@ -26,7 +25,7 @@ export default class Document extends NextDocument {
             href="/favicon-16x16.png"
           />
           <link rel="manifest" href="/site.webmanifest" />
-          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#282828" />
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
         </Head>
