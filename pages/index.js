@@ -1,4 +1,4 @@
-import NextLink from 'next/link';
+import NextLink from "next/link";
 import {
   Button,
   Container,
@@ -7,18 +7,16 @@ import {
   Image,
   Link,
   List,
-  ListItem,
-  SimpleGrid,
-  Icon,
+  Text,
   useColorModeValue,
 } from "@chakra-ui/react";
 
-import { ChevronRightIcon } from '@chakra-ui/icons';
-import Layout from '../components/layouts/article';
+import { ChevronRightIcon } from "@chakra-ui/icons";
+import Layout from "../components/layouts/article";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
-import { BioSection, BioYear } from '../components/bio';
-import SocialLink from '../components/social-link';
+import { BioSection, BioYear } from "../components/bio";
+import SocialLink from "../components/social-link";
 import {
   IoLogoTwitter,
   IoLogoInstagram,
@@ -27,10 +25,8 @@ import {
   IoLogoFacebook,
   IoLogoLinkedin,
   IoLogoVk,
-} from 'react-icons/io5';
-import {
-  BsTelegram
-} from 'react-icons/bs';
+} from "react-icons/io5";
+import { BsTelegram } from "react-icons/bs";
 
 const Page = () => {
   return (
@@ -75,17 +71,30 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             About
           </Heading>
-          <Paragraph>I&apos;m a 19 year old Fullstack Developer from St. Petersburg, Russia. I asked two of my friends to describe me in one word. They said I am responsive person and the soul of the company. 😃 Previously, I was an Affiliate manager and UI/UX designer. Such different areas of IT gave me a complete understanding of the creation of the product and a view from each side of the development.</Paragraph>
+          <Text>
+            I&apos;m a 19 year old Fullstack Developer from St. Petersburg,
+            Russia.
+            <br /> I have 1 year of hands-on experience designing, developing,
+            and implementing applications and solutions using a range of
+            technologies and programming languages. <br /> Previously, I was an
+            Affiliate Manager and UI/UX Designer. Such different areas of IT
+            gave me a complete understanding of the creation of the product and
+            a view from each side of the development.
+          </Text>
           <Box align="center" my={4}>
             <NextLink href="/stack">
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal" my={2}>
+              <Button
+                rightIcon={<ChevronRightIcon />}
+                colorScheme="teal"
+                my={2}
+              >
                 My Stack
               </Button>
             </NextLink>
           </Box>
         </Section>
         <Section delay={0.2}>
-          <Heading as='h3' variant="section-title">
+          <Heading as="h3" variant="section-title">
             Bio
           </Heading>
           <BioSection py={0.5}>
@@ -110,15 +119,18 @@ const Page = () => {
           </BioSection>
         </Section>
         <Section delay={0.3}>
-          <Heading as='h3' variant="section-title">
+          <Heading as="h3" variant="section-title">
             I ♥
           </Heading>
           <Paragraph>
-            Coding, Blockchain, NFT, {' '}
-            <Link href="https://shikimori.one/IcyKit/list/anime/order-by/name" target="_blank">
+            Coding, Blockchain, NFT,{" "}
+            <Link
+              href="https://shikimori.one/IcyKit/list/anime/order-by/name"
+              target="_blank"
+            >
               Anime
             </Link>
-            , {' '}
+            ,{" "}
             <Link href="https://www.behance.net/icykit" target="_blank">
               Design
             </Link>
@@ -131,18 +143,54 @@ const Page = () => {
             On the web
           </Heading>
           <List>
-            <SocialLink href="https://github.com/IcyKit" title="@IcyKit" logo={IoLogoGithub} />
-            <SocialLink href="https://t.me/icykit" title="@IcyKit" logo={BsTelegram} />
-            <SocialLink href='https://vk.com/mrkit228' title="Nikita Efimov" logo={IoLogoVk} />
-            <SocialLink href="https://discordapp.com/users/193069352554201088/" title="IcyKit#1922" logo={IoLogoDiscord} />
-            <SocialLink href="https://www.instagram.com/icy_kit/" title="icy_kit" logo={IoLogoInstagram} />
-            <SocialLink href="https://www.facebook.com/icykit/" title="Nikita Efimov" logo={IoLogoFacebook} />
-            <SocialLink href="https://www.linkedin.com/in/nikita-efimov-756461237/" title="Nikita Efimov" logo={IoLogoLinkedin} />
-            <SocialLink href="https://twitter.com/icy_kit" title="@icy_kit" logo={IoLogoTwitter} />
+            <SocialLink
+              href="https://github.com/IcyKit"
+              title="@IcyKit"
+              logo={IoLogoGithub}
+            />
+            <SocialLink
+              href="https://t.me/icykit"
+              title="@IcyKit"
+              logo={BsTelegram}
+            />
+            <SocialLink
+              href="https://vk.com/mrkit228"
+              title="Nikita Efimov"
+              logo={IoLogoVk}
+            />
+            <SocialLink
+              href="https://discordapp.com/users/193069352554201088/"
+              title="IcyKit#1922"
+              logo={IoLogoDiscord}
+            />
+            <SocialLink
+              href="https://www.instagram.com/icy_kit/"
+              title="icy_kit"
+              logo={IoLogoInstagram}
+            />
+            <SocialLink
+              href="https://www.facebook.com/icykit/"
+              title="Nikita Efimov"
+              logo={IoLogoFacebook}
+            />
+            <SocialLink
+              href="https://www.linkedin.com/in/nikita-efimov-756461237/"
+              title="Nikita Efimov"
+              logo={IoLogoLinkedin}
+            />
+            <SocialLink
+              href="https://twitter.com/icy_kit"
+              title="@icy_kit"
+              logo={IoLogoTwitter}
+            />
           </List>
           <Box align="center" my={4}>
             <NextLink href="/works">
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal" my={2}>
+              <Button
+                rightIcon={<ChevronRightIcon />}
+                colorScheme="teal"
+                my={2}
+              >
                 My Works
               </Button>
             </NextLink>
