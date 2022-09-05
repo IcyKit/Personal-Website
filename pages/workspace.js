@@ -13,7 +13,7 @@ import Layout from "../components/layouts/article";
 
 const Stack = () => {
   return (
-    <Layout title="Stack">
+    <Layout title="Workspace">
       <Container mt={4}>
         <Section delay={0.2}>
           <Heading Heading as="h3" fontSize={22}>
