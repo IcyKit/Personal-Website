@@ -3,7 +3,7 @@ import { Global } from "@emotion/react";
 const Fonts = () => (
   <Global
     styles={`
-    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;700;800&display=swap')
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500;700&display=swap')
   `}
   />
 );
