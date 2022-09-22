@@ -67,7 +67,7 @@ const Stack = () => {
             </ListItem>
             <ListItem>
               <ListIcon as={BsKeyboard} w={5} h={5} mr={3} />
-              <b>Keyboard</b> - Motospeed CK62 Red
+              <b>Keyboard</b> - Keychron K2
             </ListItem>
             <ListItem>
               <ListIcon as={BsMouse} w={5} h={5} mr={3} />
@@ -101,7 +101,7 @@ const Stack = () => {
           <List spacing={5} fontSize={16}>
             <ListItem>
               <ListIcon as={BiPlanet} w={5} h={5} mr={3} />
-              <b>OS</b> - Windows
+              <b>OS</b> - Windows 10
             </ListItem>
             <ListItem>
               <ListIcon as={BsFileSpreadsheetFill} w={5} h={5} mr={3} />
@@ -131,7 +131,6 @@ const Stack = () => {
               <ListIcon as={BsHeadphones} w={5} h={5} mr={3} />
               <b>Headphones</b> - Shure 215 CL
             </ListItem>
-
             <ListItem>
               <ListIcon as={MdOutlinePadding} w={5} h={5} mr={3} />
               <b>Mouse Pad</b> - ZET GAMING GM-XL Gun
