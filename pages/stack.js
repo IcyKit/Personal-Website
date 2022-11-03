@@ -51,6 +51,7 @@ const Stack = () => {
     { title: "HTML", icon: SiHtml5 },
     { title: "CSS", icon: SiCss3 },
     { title: "JavaScript", icon: SiJavascript },
+    { title: "TypeScript", icon: SiTypescript },
     { title: "React", icon: SiReact },
     { title: "Redux", icon: SiRedux },
     { title: "Next.JS", icon: SiNextdotjs },
@@ -71,7 +72,6 @@ const Stack = () => {
   ];
 
   const learningNow = [
-    { title: "TypeScript", icon: SiTypescript },
     { title: "Solidity", icon: SiSolidity },
     { title: "PostgreSQL", icon: SiPostgresql },
   ];
