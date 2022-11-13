@@ -6,6 +6,7 @@ import {
   List,
   ListItem,
   ListIcon,
+  UnorderedList,
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Layout from "../components/layouts/article";
@@ -48,40 +49,35 @@ import {
 
 const Stack = () => {
   const techStack = [
-    { title: "HTML", icon: SiHtml5 },
-    { title: "CSS", icon: SiCss3 },
-    { title: "JavaScript", icon: SiJavascript },
-    { title: "TypeScript", icon: SiTypescript },
-    { title: "React", icon: SiReact },
-    { title: "Redux", icon: SiRedux },
-    { title: "Next.JS", icon: SiNextdotjs },
-    { title: "Node.JS", icon: SiNodedotjs },
-    { title: "Express", icon: SiExpress },
-    { title: "Electron", icon: SiElectron },
-    { title: "NPM and Yarn", icon: SiNpm },
-    { title: "React Native", icon: SiReact },
-    { title: "Webpack", icon: SiWebpack },
-    { title: "Babel", icon: SiBabel },
-    { title: "ESLint", icon: SiEslint },
-    { title: "Bootstrap", icon: SiBootstrap },
-    { title: "Material UI", icon: SiMaterialui },
-    { title: "Chakra UI", icon: SiChakraui },
-    { title: "Sass", icon: SiSass },
-    { title: "Tailwind", icon: SiTailwindcss },
-    { title: "Markdown", icon: SiMarkdown },
+    { title: "HTML / CSS" },
+    { title: "JavaScript / TypeScript" },
+    { title: "NodeJS / Express" },
+    { title: "MySQL / PostgreSQL" },
+    { title: "ReactJS / Next.js" },
+    { title: "React Router v6" },
+    { title: "Electron / React Native" },
+    { title: "Redux / Redux Toolkit" },
+    { title: "SCSS / styles-components / CSS Modules / BEM" },
+    { title: "EJS" },
+    { title: "Bootstrap / Tailwind / Chakra UI / Material UI" },
+    { title: "Webpack / Gulp / Babel" },
+    { title: "JSON" },
+    { title: "Prettier / ESLint" },
+    { title: "NPM / Yarn" },
+    { title: "Markdown" },
   ];
 
-  const learningNow = [
-    { title: "Solidity", icon: SiSolidity },
-    { title: "PostgreSQL", icon: SiPostgresql },
-  ];
+  const learningNow = [];
 
   const inPlans = [
-    { title: "MongoDB", icon: SiMongodb },
-    { title: "Socket.io", icon: SiSocketdotio },
-    { title: "Postman", icon: SiPostman },
-    { title: "GraphQL", icon: SiGraphql },
-    { title: "ReduxSaga", icon: SiReduxsaga },
+    { title: "Solidity" },
+    { title: "Sequalize" },
+    { title: "WebSoket" },
+    { title: "Socket.io" },
+    { title: "Postman" },
+    { title: "GraphQL" },
+    { title: "ReduxSaga" },
+    { title: "MongoDB" },
   ];
 
   const tools = [
@@ -99,76 +95,45 @@ const Stack = () => {
       <Container mt={4}>
         <Section delay={0.2}>
           <Heading Heading as="h3" fontSize={22}>
-            Tech Stack
+            🔨 Tech Stack
           </Heading>
         </Section>
         <Section delay={0.2}>
-          <List spacing={4} fontSize={16}>
-            <SimpleGrid spacing={5} columns={[1, 2, 3]}>
+          <SimpleGrid>
+            <UnorderedList spacing={4} fontSize={16}>
               {techStack.map((item) => {
-                return (
-                  <ListItem>
-                    <ListIcon w={5} h={5} as={item.icon} />
-                    {item.title}
-                  </ListItem>
-                );
+                return <ListItem mb={3}>{item.title}</ListItem>;
               })}
-            </SimpleGrid>
-          </List>
-        </Section>
-        <Section delay={0.4}>
-          <Divider my={6} />
-          <Heading as="h3" fontSize={22}>
-            Learning right now
-          </Heading>
-        </Section>
-        <Section delay={0.4}>
-          <List spacing={4} fontSize={16}>
-            {learningNow.map((item) => {
-              return (
-                <ListItem>
-                  <ListIcon w={5} h={5} as={item.icon} />
-                  {item.title}
-                </ListItem>
-              );
-            })}
-          </List>
+            </UnorderedList>
+          </SimpleGrid>
         </Section>
         <Section delay={0.6}>
           <Divider my={6} />
           <Heading as="h3" fontSize={22}>
-            In Plans
+            💬 In Plans
           </Heading>
         </Section>
         <Section delay={0.6}>
-          <List spacing={4} fontSize={16}>
-            {inPlans.map((item) => {
-              return (
-                <ListItem>
-                  <ListIcon w={5} h={5} as={item.icon} />
-                  {item.title}
-                </ListItem>
-              );
-            })}
-          </List>
+          <SimpleGrid>
+            <UnorderedList spacing={4} fontSize={16}>
+              {inPlans.map((item) => {
+                return <ListItem mb={3}>{item.title}</ListItem>;
+              })}
+            </UnorderedList>
+          </SimpleGrid>
         </Section>
         <Section delay={0.8}>
           <Divider my={6} />
           <Heading as="h3" fontSize={22}>
-            Tools
+            ⌨️ Tools
           </Heading>
         </Section>
         <Section delay={0.8}>
-          <List spacing={4} fontSize={16}>
+          <UnorderedList spacing={4} fontSize={16}>
             {tools.map((item) => {
-              return (
-                <ListItem>
-                  <ListIcon w={5} h={5} as={item.icon} />
-                  {item.title}
-                </ListItem>
-              );
+              return <ListItem mb={3}>{item.title}</ListItem>;
             })}
-          </List>
+          </UnorderedList>
         </Section>
       </Container>
     </Layout>

@@ -69,7 +69,7 @@ const Page = () => {
         </Box>
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            About
+            ❓About
           </Heading>
           <Text>
             I&apos;m a 19 year old Fullstack Developer from St. Petersburg,
@@ -95,7 +95,7 @@ const Page = () => {
         </Section>
         <Section delay={0.2}>
           <Heading as="h3" variant="section-title">
-            Bio
+            👤 Bio
           </Heading>
           <BioSection py={0.5}>
             <BioYear>2003</BioYear>
@@ -131,27 +131,20 @@ const Page = () => {
         </Section>
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            I ♥
+            🔥 Hobbies
           </Heading>
           <Paragraph>
             Coding, Blockchain, NFT,{" "}
-            <Link
-              href="https://shikimori.one/IcyKit/list/anime/order-by/name"
-              target="_blank"
-            >
-              Anime
-            </Link>
-            ,{" "}
             <Link href="https://www.behance.net/icykit" target="_blank">
               Design
             </Link>
-            , Traveling, Games, Fitness, Music.
+            , Books, Traveling, Games.
           </Paragraph>
         </Section>
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            On the web
+            🌐 On the web
           </Heading>
           <List>
             <SocialLink
