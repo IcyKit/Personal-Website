@@ -3,49 +3,11 @@ import {
   Heading,
   SimpleGrid,
   Divider,
-  List,
   ListItem,
-  ListIcon,
   UnorderedList,
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Layout from "../components/layouts/article";
-import {
-  SiElectron,
-  SiWebpack,
-  SiBabel,
-  SiEslint,
-  SiNpm,
-  SiPostgresql,
-  SiSocketdotio,
-  SiPostman,
-  SiGraphql,
-  SiReduxsaga,
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiReact,
-  SiRedux,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiBootstrap,
-  SiMaterialui,
-  SiChakraui,
-  SiSass,
-  SiTailwindcss,
-  SiMarkdown,
-  SiTypescript,
-  SiSolidity,
-  SiMongodb,
-  SiExpress,
-  SiGit,
-  SiGithub,
-  SiVisualstudiocode,
-  SiVim,
-  SiFigma,
-  SiAdobephotoshop,
-  SiBlender,
-} from "react-icons/si";
 
 const Stack = () => {
   const techStack = [
@@ -55,6 +17,7 @@ const Stack = () => {
     { title: "MySQL / PostgreSQL" },
     { title: "ReactJS / Next.js" },
     { title: "React Router v6" },
+    { title: "Axios" },
     { title: "Electron / React Native" },
     { title: "Redux / Redux Toolkit" },
     { title: "SCSS / styles-components / CSS Modules / BEM" },
@@ -66,8 +29,6 @@ const Stack = () => {
     { title: "NPM / Yarn" },
     { title: "Markdown" },
   ];
-
-  const learningNow = [];
 
   const inPlans = [
     { title: "Solidity" },
@@ -102,7 +63,11 @@ const Stack = () => {
           <SimpleGrid>
             <UnorderedList spacing={4} fontSize={16}>
               {techStack.map((item) => {
-                return <ListItem mb={3}>{item.title}</ListItem>;
+                return (
+                  <ListItem key={item.title} mb={3}>
+                    {item.title}
+                  </ListItem>
+                );
               })}
             </UnorderedList>
           </SimpleGrid>
@@ -117,7 +82,11 @@ const Stack = () => {
           <SimpleGrid>
             <UnorderedList spacing={4} fontSize={16}>
               {inPlans.map((item) => {
-                return <ListItem mb={3}>{item.title}</ListItem>;
+                return (
+                  <ListItem key={item.title} mb={3}>
+                    {item.title}
+                  </ListItem>
+                );
               })}
             </UnorderedList>
           </SimpleGrid>
@@ -131,7 +100,11 @@ const Stack = () => {
         <Section delay={0.8}>
           <UnorderedList spacing={4} fontSize={16}>
             {tools.map((item) => {
-              return <ListItem mb={3}>{item.title}</ListItem>;
+              return (
+                <ListItem key={item.title} mb={3}>
+                  {item.title}
+                </ListItem>
+              );
             })}
           </UnorderedList>
         </Section>

@@ -47,7 +47,7 @@ const Page = () => {
             <Heading as="h2" variant="page-title">
               Efimov Nikita 👋🏻
             </Heading>
-            <p>Digital Creator (Developer / Gamer / Designer)</p>
+            <p>Digital Creator ( Developer / Gamer / Designer )</p>
           </Box>
           <Box
             flexShrink={0}
