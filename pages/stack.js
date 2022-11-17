@@ -21,10 +21,9 @@ const Stack = () => {
     { title: "Electron / React Native" },
     { title: "Redux / Redux Toolkit" },
     { title: "SCSS / styles-components / CSS Modules / BEM" },
-    { title: "EJS" },
     { title: "Bootstrap / Tailwind / Chakra UI / Material UI" },
     { title: "Webpack / Gulp / Babel" },
-    { title: "JSON" },
+    { title: "JSON / YAML" },
     { title: "Prettier / ESLint" },
     { title: "NPM / Yarn" },
     { title: "Markdown" },
@@ -42,13 +41,17 @@ const Stack = () => {
   ];
 
   const tools = [
-    { title: "Git", icon: SiGit },
-    { title: "GitHub", icon: SiGithub },
-    { title: "VS Code", icon: SiVisualstudiocode },
-    { title: "Vim", icon: SiVim },
-    { title: "Figma", icon: SiFigma },
-    { title: "Photoshop", icon: SiAdobephotoshop },
-    { title: "Blender", icon: SiBlender },
+    { title: "Git / GitHub" },
+    { title: "Vim / Neovim" },
+    { title: "VS Code" },
+    { title: "Figma / Sketch" },
+    { title: "Miro / Figma Jam" },
+    {
+      title:
+        "Jira / Trello / Aspro / Asana / Weeek / Basecamp / Shtab / Yandex Tracker",
+    },
+    { title: "Slack" },
+    { title: "Photoshop / Blender / Illustrator" },
   ];
 
   return (
