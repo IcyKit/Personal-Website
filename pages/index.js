@@ -55,16 +55,29 @@ const Page = () => {
             ml={{ md: 6 }}
             align="center"
           >
-            <Image
-              borderColor="whiteAlpha.800"
-              borderWidth={2}
-              borderStyle="solid"
-              maxWidth="100px"
-              display="inline-block"
-              borderRadius="full"
-              src="/images/icykit.jpg"
-              alt="Profile image"
-            />
+            <Box position="relative">
+              <Image
+                borderColor="whiteAlpha.800"
+                borderWidth={2}
+                borderStyle="solid"
+                maxWidth="100px"
+                display="inline-block"
+                borderRadius="full"
+                src="/images/icykit.jpg"
+                alt="Profile image"
+              />
+              <Image
+                position="absolute"
+                src="/images/hat.png"
+                top={{ base: "-70px", md: "-50px" }}
+                width={{ base: "110px", md: "330px" }}
+                right={{ base: "50%", md: "-20px" }}
+                transform={{
+                  base: "rotate(10deg) translateX(65%)",
+                  md: "rotate(10deg)",
+                }}
+              />
+            </Box>
           </Box>
         </Box>
         <Section delay={0.1}>
